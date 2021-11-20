@@ -1,0 +1,775 @@
+<html>
+ <head> 
+  <title>ZINEDDINE</title> 
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8"> 
+  <meta name="title" content="SpaTTia zineddine"> 
+  <meta name="description" content="Spattia is a Social Networking Platform. With our new feature, user can posts, photos,
+منصة للتواصل الاجتماعي منصة عائلية بامتياز وبيئة امنة لمختلف الفئات العمرية "> 
+  <meta name="keywords" content="social, Spattia , social site, شبكة سباتيا,سباتيا "> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+  <link rel="apple-touch-icon" href="https://www.spattia.com/themes/wondertag/img/icon.png"> 
+  <meta name="apple-mobile-web-app-capable" content="yes"> 
+  <meta name="apple-mobile-web-app-title" content="SpaTTia"> 
+  <meta name="pinterest-rich-pin" content="false"> 
+  <meta property="og:title" content="ZINEDDINE "> 
+  <meta property="og:type" content="article"> 
+  <meta property="og:url" content="https://www.spattia.com"> 
+  <meta property="og:image" content="https://www.spattia.com/themes/wondertag/img/og.jpg"> 
+  <meta property="og:image:secure_url" content="https://www.spattia.com/themes/wondertag/img/og.jpg"> 
+  <meta property="og:description" content="Spattia is a Social Networking Platform. With our new feature, user can posts, photos,
+منصة للتواصل الاجتماعي منصة عائلية بامتياز وبيئة امنة لمختلف الفئات العمرية "> 
+  <meta name="twitter:card" content="summary"> 
+  <meta name="twitter:title" content="ZINEDDINE"> 
+  <meta name="twitter:description" content="Spattia is a Social Networking Platform. With our new feature, user can posts, photos,
+منصة للتواصل الاجتماعي منصة عائلية بامتياز وبيئة امنة لمختلف الفئات العمرية "> 
+  <meta name="twitter:image" content="https://www.spattia.com/themes/wondertag/img/og.jpg"> 
+  <link rel="canonical" href="https://www.spattia.com/"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"> 
+  <link rel="shortcut icon" type="image/png" href="https://www.spattia.com/themes/wondertag/img/icon.png"> 
+  <link rel="stylesheet" href="https://www.spattia.com/themes/wondertag/stylesheet/general-style-plugins.css?version=2.3.6"> 
+  <link rel="stylesheet" href="https://www.spattia.com/themes/wondertag/stylesheet/welcome.css?version=2.3.6"> 
+  <link rel="stylesheet" href="https://www.spattia.com/themes/wondertag/stylesheet/welcome-startup.css?version=2.3.6"> 
+  <link rel="stylesheet" href="https://www.spattia.com/themes/wondertag/stylesheet/font-awesome-4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://www.spattia.com/themes/wondertag/stylesheet/welcome_rtl.css?version=2.3.6"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css"> 
+  <style>/* 
+
+Add here your custom css styles Example: p { text-align: center; color: red; } 
+
+*/</style> 
+  <script type="text/javascript">
+			/* 
+Add here your JavaScript Code. 
+Note. the code entered here will be added in <head> tag 
+
+
+	Example: 
+
+	var x, y, z; 
+	x = 5; 
+	y = 6; 
+	z = x + y;
+
+*/			function Wo_Ajax_Requests_File(){
+				return "https://www.spattia.com/requests.php"
+			}
+						function RunLiveAgora(channelName,DIV_ID,token) {
+				var agoraAppId = '665e42b19dca4728a48317671574f03a'; 
+				var token = token;
+
+				var client = AgoraRTC.createClient({mode: 'live', codec: 'vp8'}); 
+				client.init(agoraAppId, function () {
+
+				client.setClientRole('audience', function() {
+				}, function(e) {
+				});
+    
+				client.join(token, channelName, 759495, function(uid) {
+				}, function(err) {
+				});
+				}, function (err) {
+				});
+
+				client.on('stream-added', function (evt) {
+					var stream = evt.stream;
+					var streamId = stream.getId();
+		
+					client.subscribe(stream, function (err) {
+					});
+				});
+				client.on('stream-subscribed', function (evt) {
+					var remoteStream = evt.stream;
+					remoteStream.play(DIV_ID);
+					$('#player_'+remoteStream.getId()).addClass('embed-responsive-item');
+				});
+			}
+		</script> 
+  <style>
+@font-face {
+    font-family: TT Commons;font-display: swap;src: url("https://www.spattia.com/themes/wondertag/fonts/TTCommons-DemiBold.woff") format("woff");font-weight: 600;font-style: normal;
+}
+@font-face {
+    font-family: TT Commons;font-display: swap;src: url("https://www.spattia.com/themes/wondertag/fonts/TTCommons-Medium.woff") format("woff");font-weight: 500;font-style: normal;
+}
+@font-face {
+    font-family: TT Commons;font-display: swap;src: url("https://www.spattia.com/themes/wondertag/fonts/TTCommons-Regular.woff") format("woff");font-weight: normal;font-style: normal;
+}
+
+:root {
+	--body-bg: #e3fdfd;
+	--header-background: #00adb5;
+	--header-color: #ffffff;
+	--header-hover-color: #333333;
+	--header-search-color: #71c9ce;
+	--main: #65babf;
+	--main-hover: #38777a;
+	--main-color: #ffffff;
+	--main-hover-color: #ffffff;
+	--chat-outgoing: #fff9f9;
+	--plyr-color-main: #65babf;
+	--plyr-control-toggle-checked-background: transparent;
+	--plyr-video-control-background-hover: rgba(255, 255, 255, 0.2);
+	--plyr-range-fill-background: #fff;
+	--plyr-range-track-height: 3px;
+}
+
+.reaction-1::after {content: "إعجاب";}
+.reaction-2::after {content: "حب";}
+.reaction-3::after {content: "هههه";}
+.reaction-4::after {content: "رائع";}
+.reaction-5::after {content: "حزين";}
+.reaction-6::after {content: "غاضب";}
+</style> 
+  <script>
+		let nodejs_system = "0";
+      let socket = null
+      let groupChatListener = {}
+      $(()=>{
+              });
+      </script> 
+  <style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style> 
+ </head> 
+ <body class="tag_header_top_p"> 
+  <div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-floating cc-type-info cc-theme-classic cc-bottom cc-invisible" style="display: none;"> 
+   <!--googleoff: all--> 
+   <span id="cookieconsent:desc" class="cc-message">يستخدم موقع الويب هذا ملفات تعريف الارتباط لضمان حصولك على أفضل تجربة على موقعنا. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.spattia.com/terms/privacy-policy" target="_blank">أعرف أكثر</a></span> 
+   <div class="cc-compliance"> 
+    <a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">فهمتك!</a> 
+   </div> 
+   <!--googleon: all--> 
+  </div> 
+  <input type="hidden" id="get_no_posts_name" value="لا يوجد المزيد"> 
+  <input type="hidden" class="seen_stories_users_ids" value=""> 
+  <input type="hidden" class="main_session" value="a523c283b9ba4a17676d"> 
+  <div id="ajax_loading" class="tag_content tag_header_top_m"> 
+   <div class="ad-placement-header-footer"> 
+   </div> 
+   <div id="contnet"> 
+    <div class="tag_welcome tag_stup_welcome"> 
+     <div class="tag_wel_upper"> 
+      <div class="container"> 
+       <div class="valign navbar-default"> 
+        <a class="logo" href="https://www.spattia.com"><img src="https://www.spattia.com/themes/wondertag/img/logo.png" alt="Logo"> </a> 
+        <a class="btn btn-main btn-mat" href="https://www.spattia.com/register">التسجيل</a> 
+       </div> 
+      </div> 
+      <div class="tag_stup_hdr"> 
+       <div class="container"> 
+        <div class="text-center"> 
+         <p class="tag_wel_subtitle">أهلا بك!</p> 
+         <h2 class="tag_wel_title">تواصل مع عائلتك وأصدقائك شارك اللحظات الخاصة بك.</h2> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="tag_wel_middle"> 
+      <div class="container"> 
+       <div class="tag_stup_login"> 
+        <div class="wow_content tag_auth_box"> 
+         <div class="valign tag_auth_animation d-none"> 
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 367.805 367.805" xml:space="preserve"> 
+           <g> 
+            <path style="fill:#3BB54A;" d="M183.903,0.001c101.566,0,183.902,82.336,183.902,183.902s-82.336,183.902-183.902,183.902 S0.001,285.469,0.001,183.903l0,0C-0.288,82.625,81.579,0.29,182.856,0.001C183.205,0,183.554,0,183.903,0.001z"></path> 
+            <polygon style="fill:#fff;" points="285.78,133.225 155.168,263.837 82.025,191.217 111.805,161.96 155.168,204.801 256.001,103.968"></polygon> 
+           </g> 
+          </svg>أهلا بك! 
+         </div> 
+         <div class="valign"> 
+          <ul class="valign nav nav-tabs tag_stup_switch" role="tablist"> 
+           <li role="presentation"><a href="#login_usrnm" class="active" aria-controls="login_usrnm" role="tab" data-toggle="tab">اسم المستخدم تسجيل الدخول</a></li> 
+           <li role="presentation"><a href="#login_socal" aria-controls="login_socal" role="tab" data-toggle="tab">دخول التواصل الإجتماعي</a></li> 
+          </ul> 
+         </div> 
+         <div class="tab-content"> 
+          <div role="tabpanel" class="tab-pane active" id="login_usrnm"> 
+           <form id="login" method="post"> 
+            <div class="errors"></div> 
+            <div class="valign tag_stup_login_cont"> 
+             <label class="tag_field"> <input name="username" type="text" autocomplete="off" placeholder=" " autofocus required> <span>اسم المستخدم</span> </label> 
+             <label class="tag_field tag_wel_forgot"> <input name="password" type="password" autocomplete="off" placeholder=" " required> <span>كلمة المرور</span> <a href="https://www.spattia.com/forgot-password" title="" data-toggle="tooltip" data-original-title="هل نسيت كلمة المرور؟"> 
+               <svg xmlns="http://www.w3.org/2000/svg" height="22" viewbox="0 0 24 24" width="22"> 
+                <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92c-.5.51-.86.97-1.04 1.69-.08.32-.13.68-.13 1.14h-2v-.5c0-.46.08-.9.22-1.31.2-.58.53-1.1.95-1.52l1.24-1.26c.46-.44.68-1.1.55-1.8-.13-.72-.69-1.33-1.39-1.53-1.11-.31-2.14.32-2.47 1.27-.12.37-.43.65-.82.65h-.3C8.4 9 8 8.44 8.16 7.88c.43-1.47 1.68-2.59 3.23-2.83 1.52-.24 2.97.55 3.87 1.8 1.18 1.63.83 3.38-.19 4.4z"></path> 
+               </svg></a> </label> 
+             <button type="submit" class="btn btn-main btn-mat disable_btn tag_wel_btn">تسجيل الدخول</button> 
+            </div> 
+           </form> 
+          </div> 
+          <div role="tabpanel" class="tab-pane" id="login_socal"> 
+           <div class="valign social_btns"> 
+            <a href="https://www.spattia.com/login-with.php?provider=Facebook" class="btn fb"> 
+             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="22" height="22"> 
+              <path fill="#1877f2" d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"></path> 
+             </svg> الفسبوك</a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="tag_stup_feats"> 
+        <div class="row"> 
+         <div class="col-md-6"> 
+          <div class="tag_boost_help"> 
+           <ul> 
+            <li><b>شارك</b><p>شارك اللحظات الجديدة في حياتك مع أصدقائك.</p></li> 
+            <li><b>إستكشف</b><p>إكتشف أشخاص جدد، وأنشىء اتصالات جديدة وكون صداقات جديدة.</p></li> 
+            <li><b>100% الخصوصية</b><p>لديك سيطرة كاملة على معلوماتك الشخصية التي تشاركها.</p></li> 
+            <li class="mb-0"><b>أكثر الأمان</b><p>حسابك آمن تمامًا..</p></li> 
+           </ul> 
+          </div> 
+         </div> 
+         <div class="col-md-6"> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="tag_wel_bottom"> 
+      <div class="container"> 
+       <div class="welcome-footer">
+         © 2021 ZINEDDINE 
+        <span class="middot">·</span> 
+        <a data-ajax="?link1=terms&amp;type=terms" href="https://www.spattia.com/terms/terms">شروط الاستخدام</a> 
+        <span class="middot">·</span> 
+        <a data-ajax="?link1=terms&amp;type=privacy-policy" href="https://www.spattia.com/terms/privacy-policy">سياسة الخصوصية</a> 
+        <span class="middot">·</span> 
+        <a href="https://www.spattia.com/contact-us">إتصل بنا</a> 
+        <span class="middot">·</span> 
+        <a data-ajax="?link1=terms&amp;type=about-us" href="https://www.spattia.com/terms/about-us">حول</a> 
+        <span class="middot">·</span> 
+        <a href="https://www.spattia.com/site-pages/Apptest">App Test</a> 
+        <span class="middot">·</span> 
+        <span class="dropup"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 24 24"> 
+           <path fill="currentColor" d="M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path> 
+          </svg> اللغة</a> 
+         <ul class="dropdown-menu dropdown-menu-right"> 
+          <li><a href="?lang=english" rel="nofollow">English</a></li> 
+          <li><a href="?lang=arabic" rel="nofollow">Arabic</a></li> 
+          <li><a href="?lang=dutch" rel="nofollow">Dutch</a></li> 
+          <li><a href="?lang=french" rel="nofollow">French</a></li> 
+          <li><a href="?lang=german" rel="nofollow">German</a></li> 
+          <li><a href="?lang=italian" rel="nofollow">Italian</a></li> 
+          <li><a href="?lang=portuguese" rel="nofollow">Portuguese</a></li> 
+          <li><a href="?lang=russian" rel="nofollow">Russian</a></li> 
+          <li><a href="?lang=spanish" rel="nofollow">Spanish</a></li> 
+          <li><a href="?lang=turkish" rel="nofollow">Turkish</a></li> 
+         </ul> </span> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <script>
+(function($) {
+	$.fn.visible = function(partial) {
+		var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+		return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+	};
+})(jQuery);
+
+var win = $(window);
+var allTrends = $(".tag_stup_trend");
+
+allTrends.each(function(i, el) {
+	var el = $(el);
+	if (el.visible(true)) {
+		el.addClass("already-visible"); 
+	} 
+});
+
+win.scroll(function(event) {
+	allTrends.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+			el.addClass("come-in"); 
+		} 
+	});
+});
+
+var working = false;
+var $this = $('#login');
+var $state = $this.find('.errors');
+var $login_anim = $('.tag_auth_animation');
+
+
+$(function() {
+  $('#login').ajaxForm({
+    url: Wo_Ajax_Requests_File() + '?f=login',
+    beforeSend: function() {
+		working = true;
+		$this.find('.disable_btn').attr("disabled", true);
+    },
+    success: function(data) {
+      if (data.status == 200 || data.status == 600) {
+      	$login_anim.removeClass('d-none');
+        setTimeout(function () {
+        	window.location.href = data.location;
+        }, 1000);
+      } else {
+        var errors = data.errors.join("<br>");
+        $state.html(errors);
+      } 
+      working = false;
+	  $this.find('.disable_btn').attr("disabled", false);
+    }
+  });
+});
+</script> 
+   </div> 
+   <div class="ad-placement-header-footer"> 
+   </div> 
+  </div> 
+  <div class="modal fade image-modal" id="modal_light_box" role="dialog"> 
+   <div class="valign tag_lbox_toolbar"> 
+    <div class="btn btn-mat close-lightbox" data-dismiss="modal" aria-label="Close"> 
+     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24"> 
+      <path fill="currentColor" d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z"></path> 
+     </svg> 
+    </div> 
+   </div> 
+   <div class="modal-dialog"> 
+    <div class="modal-content"> 
+     <img class="image"> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="modal fade" id="views-info-modal" role="dialog"> 
+   <div class="modal-dialog wow_mat_mdl modal-md"> 
+    <div class="modal-content"> 
+     <div class="modal-header"> 
+      <h4 class="modal-title"><span id="views_info_title"></span></h4> 
+     </div> 
+     <div class="modal-body"> 
+      <div id="views_info" class="wo_react_ursrs_list"></div> 
+      <div class="clearfix"></div> 
+      <div id="views_info_load" style="display: none;"> 
+       <div class="load-more views_info_load_ wo_react_ursrs_list_lod_mor"> 
+        <button class="btn btn-default text-center views_info_load_more" data-type="" post-id="" table-type="" onclick="Wo_LoadViewsInfo(this);"><span> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"> 
+           <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path> 
+          </svg></span> <span class="no_load_more_btn_span" id="load_more_info_btn">تحميل أكثر</span> </button> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="modal fade" id="users-reacted-modal" role="dialog"> 
+   <div class="modal-dialog wow_mat_mdl modal-md"> 
+    <div class="modal-content"> 
+     <div class="valign mb-15 who_react_modal"> 
+      <span class="tag_check_who_how_react how_reacted like-btn-like pointer" id="_post333" onclick="Wo_LoadReactedUsers(1);$('.tag_check_who_how_react').removeClass('active');$(this).addClass('active');"> 
+       <div class="inline_post_emoji inline_act_emoji no_anim"> 
+        <div class="emoji emoji--like"> 
+         <div class="emoji__hand"> 
+          <div class="emoji__thumb"></div> 
+         </div> 
+        </div> 
+       </div> </span> 
+      <span class="tag_check_who_how_react how_reacted like-btn-like pointer" id="_post333" onclick="Wo_LoadReactedUsers(2);$('.tag_check_who_how_react').removeClass('active');$(this).addClass('active');"> 
+       <div class="inline_post_emoji inline_act_emoji no_anim"> 
+        <div class="emoji emoji--love"> 
+         <div class="emoji__heart"></div> 
+        </div> 
+       </div> </span> 
+      <span class="tag_check_who_how_react how_reacted like-btn-like pointer" id="_post333" onclick="Wo_LoadReactedUsers(3);$('.tag_check_who_how_react').removeClass('active');$(this).addClass('active');"> 
+       <div class="inline_post_emoji inline_act_emoji no_anim"> 
+        <div class="emoji emoji--haha"> 
+         <div class="emoji__face"> 
+          <div class="emoji__eyes"></div> 
+          <div class="emoji__mouth"> 
+           <div class="emoji__tongue"></div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> </span> 
+      <span class="tag_check_who_how_react how_reacted like-btn-like pointer" id="_post333" onclick="Wo_LoadReactedUsers(4);$('.tag_check_who_how_react').removeClass('active');$(this).addClass('active');"> 
+       <div class="inline_post_emoji inline_act_emoji no_anim"> 
+        <div class="emoji emoji--wow"> 
+         <div class="emoji__face"> 
+          <div class="emoji__eyebrows"></div> 
+          <div class="emoji__eyes"></div> 
+          <div class="emoji__mouth"></div> 
+         </div> 
+        </div> 
+       </div> </span> 
+      <span class="tag_check_who_how_react how_reacted like-btn-like pointer" id="_post333" onclick="Wo_LoadReactedUsers(5);$('.tag_check_who_how_react').removeClass('active');$(this).addClass('active');"> 
+       <div class="inline_post_emoji inline_act_emoji no_anim"> 
+        <div class="emoji emoji--sad"> 
+         <div class="emoji__face"> 
+          <div class="emoji__eyebrows"></div> 
+          <div class="emoji__eyes"></div> 
+          <div class="emoji__mouth"></div> 
+         </div> 
+        </div> 
+       </div> </span> 
+      <span class="tag_check_who_how_react how_reacted like-btn-like pointer" id="_post333" onclick="Wo_LoadReactedUsers(6);$('.tag_check_who_how_react').removeClass('active');$(this).addClass('active');"> 
+       <div class="inline_post_emoji inline_act_emoji no_anim"> 
+        <div class="emoji emoji--angry"> 
+         <div class="emoji__face"> 
+          <div class="emoji__eyebrows"></div> 
+          <div class="emoji__eyes"></div> 
+          <div class="emoji__mouth"></div> 
+         </div> 
+        </div> 
+       </div> </span> 
+     </div> 
+     <div class="modal-body"> 
+      <div id="reacted_users_box" class="wo_react_ursrs_list"></div> 
+      <div class="clearfix"></div> 
+      <div id="reacted_users_load" style="display: none;"> 
+       <div class="load-more wo_react_ursrs_list_lod_mor"> 
+        <button class="btn btn-default text-center reacted_users_load_more" data-type="" post-id="" col-type="" onclick="Wo_LoadMoreReactedUsers(this);"><span> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"> 
+           <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path> 
+          </svg></span> <span class="no_load_more_btn_span" id="load_more_reacted_btn">تحميل أكثر</span> </button> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="modal fade" id="error_post" role="dialog"> 
+   <div class="modal-dialog wow_mat_mdl"> 
+    <div class="modal-content"> 
+     <p class="text-center" id="error_post_text"></p> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="modal fade" id="edit-offer-modal" role="dialog"> 
+   <div class="modal-dialog wow_mat_mdl"> 
+    <div class="modal-content"> 
+     <div class="modal-header"> 
+      <h4 class="modal-title">تعديل العرض</h4> 
+     </div> 
+     <form class="edit-offer-form form-horizontal" method="post"> 
+      <div class="modal-body tag_field_full_margin"> 
+       <div class="app-offer-alert app-general-alert"></div> 
+       <div class="clear"></div> 
+       <div class="edit_offer_modal_form"></div> 
+      </div> 
+      <div class="modal-footer"> 
+       <button type="button" class="btn btn-default btn-mat disable_btn" data-dismiss="modal" aria-label="Close">إلغاء</button> 
+       <button type="submit" class="btn btn-main btn-mat disable_btn">تحديث</button> 
+      </div> 
+     </form> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="extra-css"></div> 
+  <script type="text/javascript">
+  (function (factory) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD. Register as an anonymous module.
+    define(['jquery'], factory);
+  } else {
+    // Browser globals
+    factory(jQuery);
+  }
+}(function ($) {
+  $.timeago = function(timestamp) {
+    if (timestamp instanceof Date) {
+      return inWords(timestamp);
+    } else if (typeof timestamp === "string") {
+      return inWords($.timeago.parse(timestamp));
+    } else if (typeof timestamp === "number") {
+      return inWords(new Date(timestamp));
+    } else {
+      return inWords($.timeago.datetime(timestamp));
+    }
+  };
+  var $t = $.timeago;
+
+  $.extend($.timeago, {
+    settings: {
+      refreshMillis: 60000,
+      allowPast: true,
+      allowFuture: false,
+      localeTitle: false,
+      cutoff: 0,
+      strings: {
+        prefixAgo: null,
+        prefixFromNow: null,
+        suffixAgo: "منذ",
+        suffixFromNow: "من الآن",
+        inPast: "في أي لحظة الآن",
+        seconds: "حاليا",
+        minute: "دقيقة",
+        minutes: "دقائق",
+        hour: "ساعة",
+        hours: "ساعات",
+        day: "يوم",
+        days: "أيام",
+        month: "شهر",
+        months: "اشهر",
+        year: "سنة",
+        years: "سنوات",
+        wordSeparator: " ",
+        numbers: []
+      }
+    },
+
+    inWords: function(distanceMillis) {
+      if(!this.settings.allowPast && ! this.settings.allowFuture) {
+          throw 'timeago allowPast and allowFuture settings can not both be set to false.';
+      }
+
+      var $l = this.settings.strings;
+      var prefix = $l.prefixAgo;
+      var suffix = $l.suffixAgo;
+      if (this.settings.allowFuture) {
+        if (distanceMillis < 0) {
+          prefix = $l.prefixFromNow;
+          suffix = $l.suffixFromNow;
+        }
+      }
+
+      if(!this.settings.allowPast && distanceMillis >= 0) {
+        return this.settings.strings.inPast;
+      }
+
+      var seconds = Math.abs(distanceMillis) / 1000;
+      var minutes = seconds / 60;
+      var hours = minutes / 60;
+      var days = hours / 24;
+      var weeks = days / 7;
+      var years = days / 365;
+
+      function substitute(stringOrFunction, number) {
+        var string = $.isFunction(stringOrFunction) ? stringOrFunction(number, distanceMillis) : stringOrFunction;
+        var value = ($l.numbers && $l.numbers[number]) || number;
+        return number+' '+string.replace(/%d/i, value);
+        //return string.replace(/%d/i, value);
+      }
+
+        // var words = seconds < 45 && substitute($l.seconds, '') ||
+        // seconds < 90 && substitute('m', 1) ||
+        // minutes < 45 && substitute('m', Math.round(minutes)) ||
+        // minutes < 90 && substitute('h', 1) ||
+        // hours < 24 && substitute('hrs', Math.round(hours)) ||
+        // hours < 42 && substitute('d', 1) ||
+        // days < 7 && substitute('d', Math.round(days)) ||
+        // weeks < 2 && substitute('w', 1) ||
+        // weeks < 52 && substitute('w', Math.round(weeks)) ||
+        // years < 1.5 && substitute('y', 1) ||
+        // substitute('yrs', Math.round(years));
+        var words = '';
+        if (seconds < 45) {
+            words = substitute($l.seconds, '');
+        }
+        else if (seconds < 90) {
+            words = substitute('د', 1);
+        }
+        else if (minutes < 45) {
+            words = substitute('د', Math.round(minutes));
+        }
+        else if (minutes < 90) {
+            words = substitute('سا', 1);
+        }
+        else if (hours < 24) {
+            words = substitute('ساعة', Math.round(hours));
+        }
+        else if (hours < 42) {
+            words = substitute('ي', 1);
+        }
+        else if (days < 7) {
+            words = substitute('ي', Math.round(days));
+        }
+        else if (weeks < 2) {
+            words = substitute('أس', 1);
+        }
+        else if (weeks < 52) {
+            words = substitute('أس', Math.round(weeks));
+        }
+        else if (years < 1.5) {
+            words = substitute('س', 1);
+        }
+        else {
+            words = substitute('سنوات', Math.round(years));
+        }
+
+
+
+      var separator = $l.wordSeparator || "";
+      if ($l.wordSeparator === undefined) { separator = " "; }
+
+      
+         return $.trim([prefix, words].join(separator));
+
+          },
+
+    parse: function(iso8601) {
+      var s = $.trim(iso8601);
+      s = s.replace(/\.\d+/,""); // remove milliseconds
+      s = s.replace(/-/,"/").replace(/-/,"/");
+      s = s.replace(/T/," ").replace(/Z/," UTC");
+      s = s.replace(/([\+\-]\d\d)\:?(\d\d)/," $1$2"); // -04:00 -> -0400
+      s = s.replace(/([\+\-]\d\d)$/," $100"); // +09 -> +0900
+      return new Date(s);
+    },
+    datetime: function(elem) {
+      var iso8601 = $t.isTime(elem) ? $(elem).attr("datetime") : $(elem).attr("title");
+      return $t.parse(iso8601);
+    },
+    isTime: function(elem) {
+      // jQuery's `is()` doesn't play well with HTML5 in IE
+      return $(elem).get(0).tagName.toLowerCase() === "time"; // $(elem).is("time");
+    }
+  });
+
+  // functions that can be called via $(el).timeago('action')
+  // init is default when no action is given
+  // functions are called with context of a single element
+  var functions = {
+    init: function(){
+      var refresh_el = $.proxy(refresh, this);
+      refresh_el();
+      var $s = $t.settings;
+      if ($s.refreshMillis > 0) {
+        this._timeagoInterval = setInterval(refresh_el, $s.refreshMillis);
+      }
+    },
+    update: function(time){
+      var parsedTime = $t.parse(time);
+      $(this).data('timeago', { datetime: parsedTime });
+      if($t.settings.localeTitle) $(this).attr("title", parsedTime.toLocaleString());
+      refresh.apply(this);
+    },
+    updateFromDOM: function(){
+      $(this).data('timeago', { datetime: $t.parse( $t.isTime(this) ? $(this).attr("datetime") : $(this).attr("title") ) });
+      refresh.apply(this);
+    },
+    dispose: function () {
+      if (this._timeagoInterval) {
+        window.clearInterval(this._timeagoInterval);
+        this._timeagoInterval = null;
+      }
+    }
+  };
+
+  $.fn.timeago = function(action, options) {
+    var fn = action ? functions[action] : functions.init;
+    if(!fn){
+      throw new Error("Unknown function name '"+ action +"' for timeago");
+    }
+    // each over objects here and call the requested function
+    this.each(function(){
+      fn.call(this, options);
+    });
+    return this;
+  };
+
+  function refresh() {
+    var data = prepareData(this);
+    var $s = $t.settings;
+
+    if (!isNaN(data.datetime)) {
+      if ( $s.cutoff == 0 || Math.abs(distance(data.datetime)) < $s.cutoff) {
+        $(this).text(inWords(data.datetime));
+      }
+    }
+    return this;
+  }
+
+  function prepareData(element) {
+    element = $(element);
+    if (!element.data("timeago")) {
+      element.data("timeago", { datetime: $t.datetime(element) });
+      var text = $.trim(element.text());
+      if ($t.settings.localeTitle) {
+        element.attr("title", element.data('timeago').datetime.toLocaleString());
+      } else if (text.length > 0 && !($t.isTime(element) && element.attr("title"))) {
+        element.attr("title", text);
+      }
+    }
+    return element.data("timeago");
+  }
+
+  function inWords(date) {
+    return $t.inWords(distance(date));
+  }
+
+  function distance(date) {
+    return (new Date().getTime() - date.getTime());
+  }
+
+  // fix for IE6 suckage
+  document.createElement("abbr");
+  document.createElement("time");
+}));
+
+
+$(function () {
+  setInterval(function () {
+    
+    if ( $('.ajax-time').length > 0) {
+      $('.ajax-time').timeago()
+        .removeClass('.ajax-time');
+    }
+  },
+  1000);
+});
+</script> 
+  <script>
+						let f = navigator.userAgent.search("Firefox");
+			if (f > -1) {
+				$('.header-brand').attr('href', "https://www.spattia.com/?cache=1637422037");
+			}
+			
+						
+						function ShowCommentStickers(id,type) {
+				$('.chat-box-stickers-cont').empty();
+				functionName = "Wo_PostReplyCommentSticker_"+id+"(this,"+id+");";
+				if (type == 'story') {
+					functionName = "Wo_PostCommentSticker_"+id+"(this,"+id+");";
+				}
+								sticker = '<img alt="gif" src="https://www.spattia.com/upload/photos/2021/10/AhyRbujO2rPrAeXBHHih_28_4318f1b3591aa966342d2daf4e951684_image.gif" data-gif="https://www.spattia.com/upload/photos/2021/10/AhyRbujO2rPrAeXBHHih_28_4318f1b3591aa966342d2daf4e951684_image.gif" onclick="'+functionName+'" autoplay loop><img alt="gif" src="https://www.spattia.com/upload/photos/2021/08/eU4qM1D9QgSLXi6We1sA_12_6e9d42b09368054a1ca3ba5942dbcb73_image.jpg" data-gif="https://www.spattia.com/upload/photos/2021/08/eU4qM1D9QgSLXi6We1sA_12_6e9d42b09368054a1ca3ba5942dbcb73_image.jpg" onclick="'+functionName+'" autoplay loop>';
+				$('#publisher-box-sticker-cont-'+id).html(sticker);
+			}
+				  
+						$(document).ready(function(){
+				$('body').on('contextmenu', 'video', function() { return false; });
+			});
+			$(window).on("popstate", function (e) {
+				location.reload();
+			});
+			jQuery(document).click(function(event){
+				if (!(jQuery(event.target).closest(".remove_combo_on_click").length)) {
+					jQuery('.remove_combo_on_click').removeClass('comment-toggle');
+				}
+			});
+			/* 
+
+The code entered here will be added in <footer> tag 
+
+*/		</script> 
+  <script>
+				window.addEventListener("load", function(){
+					window.cookieconsent.initialise({
+						"theme": "classic",
+						"content": {
+							"message": "يستخدم موقع الويب هذا ملفات تعريف الارتباط لضمان حصولك على أفضل تجربة على موقعنا.",
+							"dismiss": "فهمتك!",
+							"link": "أعرف أكثر",
+							"href": "https://www.spattia.com/terms/privacy-policy"
+						}
+					})
+				});
+			</script> 
+  <div id="fb-root" class=" fb_reset"> 
+   <div style="position: absolute; top: -10000px; width: 0px; height: 0px;"> 
+    <div></div> 
+   </div> 
+  </div> 
+ </body>
+</html>
